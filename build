@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# build
+docker build -t npulidom/alpine-phalcon .
+echo "\n-> Build success\n"
+
+# image push
+if [ "$#" -ne 0 ] && [ "$1" = "push" ]; then
+	docker push npulidom/alpine-phalcon
+fi
