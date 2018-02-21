@@ -3,12 +3,12 @@ FROM npulidom/alpine-nginx-php
 LABEL maintainer="nicolas.pulido@crazycake.cl"
 
 # phalcon version
-ENV PHALCON_VERSION=3.2.1
+ENV PHALCON_VERSION=3.2.4
 # iconv
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so
 
 # install pear (and pecl)
-RUN apk update && apk add -U --no-cache --repository=http://dl-4.alpinelinux.org/alpine/edge/testing \
+RUN apk update && apk add -U --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
 	# compiler & tools
 	make \
 	g++ \
