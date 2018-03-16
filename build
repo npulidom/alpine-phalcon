@@ -1,10 +1,12 @@
 #!/bin/sh
 
+TAG="edge"
+
 # build
-docker build -t npulidom/alpine-phalcon .
+docker build -t npulidom/alpine-phalcon:$TAG .
 echo "\n-> Build success\n"
 
 # image push
 if [ "$#" -ne 0 ] && [ "$1" = "push" ]; then
-	docker push npulidom/alpine-phalcon
+	docker push npulidom/alpine-phalcon:$TAG
 fi
