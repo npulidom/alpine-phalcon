@@ -1,5 +1,5 @@
 # OS
-FROM npulidom/alpine-nginx-php:edge
+FROM npulidom/alpine-nginx-php:latest
 LABEL maintainer="nicolas.pulido@crazycake.cl"
 
 # phalcon version
