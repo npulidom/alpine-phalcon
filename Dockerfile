@@ -1,5 +1,5 @@
 # OS
-FROM npulidom/alpine-nginx-php:latest
+FROM npulidom/alpine-nginx-php
 LABEL maintainer="nicolas.pulido@crazycake.cl"
 
 # phalcon version
@@ -8,7 +8,8 @@ ENV PHALCON_VERSION=3.4.1
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so
 
 # install escentials
-RUN apk add --update --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+RUN apk update && \
+	apk add --update --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
 	# compiler & tools
 	make \
 	g++ \
@@ -38,7 +39,7 @@ RUN apk add --update --no-cache --repository=http://dl-cdn.alpinelinux.org/alpin
 	cd ../.. && rm -rf v${PHALCON_VERSION}.tar.gz cphalcon-${PHALCON_VERSION} \
 	&& \
 	# clean dev libs
-	apk update && apk del \
+	apk del \
 	make \
 	g++ \
 	autoconf \
