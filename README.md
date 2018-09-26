@@ -2,7 +2,7 @@ alpine-phalcon
 ==============
 
 PhalconPHP 3.x running in PHP-FPM (**nginx**), developed for Phalcon apps.  
-Uncompressed size: 127 Mb.
+Uncompressed size: 123 MB.
 
 ## Usage
 
@@ -18,8 +18,8 @@ Build Arguments
 ### Dockerfile building
 
 ```docker
-# latest tag for stable
-FROM npulidom/alpine-phalcon:edge
+# latest tag
+FROM npulidom/alpine-phalcon
 
 # working dir
 WORKDIR /var/www

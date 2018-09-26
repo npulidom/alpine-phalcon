@@ -38,7 +38,7 @@ RUN apk add --update --no-cache --repository=http://dl-cdn.alpinelinux.org/alpin
 	cd ../.. && rm -rf v${PHALCON_VERSION}.tar.gz cphalcon-${PHALCON_VERSION} \
 	&& \
 	# clean dev libs
-	apk del \
+	apk update && apk del \
 	make \
 	g++ \
 	autoconf \
