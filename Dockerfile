@@ -8,8 +8,7 @@ ENV PHALCON_VERSION=3.4.1
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so
 
 # install escentials
-RUN apk update && \
-	apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+RUN apk update && apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
 	# compiler & tools
 	make \
 	g++ \
