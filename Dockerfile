@@ -3,7 +3,7 @@ FROM npulidom/alpine-nginx-php
 LABEL maintainer="nicolas.pulido@crazycake.tech"
 
 # phalcon version
-ENV PHALCON_VERSION=3.4.1
+ENV PHALCON_VERSION=3.4.2
 # iconv
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so
 
