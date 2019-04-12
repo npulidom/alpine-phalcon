@@ -8,7 +8,7 @@ ENV PHALCON_VERSION=3.4.2
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so
 
 # install escentials
-RUN apk update && apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+RUN apk update && apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
 	# compiler & tools
 	make \
 	g++ \
@@ -18,7 +18,7 @@ RUN apk update && apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/
 	re2c \
 	pcre-dev \
 	# iconv & gd
-	gnu-libiconv \
+	gnu-libiconv-dev \
 	php7-iconv@php \
 	php7-gd@php \
 	php7-redis@php \
