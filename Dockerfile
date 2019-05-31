@@ -2,6 +2,7 @@
 FROM npulidom/alpine-nginx-php
 LABEL maintainer="nicolas.pulido@crazycake.tech"
 
+# icon-v env var
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so
 
 # install escentials
