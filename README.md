@@ -2,7 +2,7 @@ alpine-phalcon
 ==============
 
 PhalconPHP 3.x running in PHP-FPM (**nginx**), developed for Phalcon apps.  
-Uncompressed size: 117 MB.
+Uncompressed size: 116 MB.
 
 ## Usage
 
@@ -32,7 +32,6 @@ CMD ["--nginx-env"]
 
 ## PHP Extensions
 
-- php7-iconv
-- php7-gd
-- pecl-redis
-- phalcon3
+- gd
+- redis
+- phalcon
