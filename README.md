@@ -32,6 +32,6 @@ CMD ["--nginx-env"]
 
 ## PHP Extensions
 
-- gd
-- redis
-- phalcon
+- php-gd
+- php-redis
+- php-phalcon
