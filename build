@@ -1,9 +1,10 @@
 #!/bin/sh
 
 TAG="${1:-latest}"
+OPTS="${2:-}"
 
 # build
-docker build -t npulidom/alpine-phalcon:$TAG .
+docker build $OPTS -t npulidom/alpine-phalcon:$TAG .
 echo "\n-> Build success\n"
 
 # image push
