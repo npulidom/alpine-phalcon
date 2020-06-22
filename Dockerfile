@@ -6,4 +6,5 @@ RUN apk update && apk add \
 	php-gd \
 	php-redis \
 	php-phalcon \
+	php-psr \
 	&& rm -rf /var/cache/apk/*
