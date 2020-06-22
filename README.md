@@ -1,15 +1,15 @@
 alpine-phalcon
 ==============
 
-PhalconPHP 3.x running in PHP-FPM (**nginx**), developed for Phalcon apps.  
+PhalconPHP 4.x running in PHP-FPM (**nginx**), developed for Phalcon apps.
 Uncompressed size: 116 MB.
 
 ## Usage
 
-Run Container [port **8080**]  
+Run Container [port **8080**]
 `docker run -p 8080:80 -d npulidom/alpine-phalcon`
 
-Entry point options  
+Entry point options
 `--nginx-env` : export env vars to nginx, var must have at least one underscore, ie: *APP_ENV*, *APP_TZ*.
 
 Build Arguments
