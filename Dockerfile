@@ -1,5 +1,5 @@
 # OS
-FROM npulidom/alpine-nginx-php
+FROM npulidom/alpine-nginx-php:edge
 LABEL maintainer="nicolas.pulido@crazycake.tech"
 
 RUN apk update && apk add \
