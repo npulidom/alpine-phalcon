@@ -35,3 +35,4 @@ CMD ["--nginx-env"]
 - php-gd
 - php-redis
 - php-phalcon
+- php-psr
