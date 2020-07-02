@@ -2,7 +2,7 @@ alpine-phalcon
 ==============
 
 PhalconPHP 4.x running in PHP-FPM (**nginx**), developed for Phalcon apps.
-Uncompressed size: 116 MB.
+Uncompressed size: 112 MB.
 
 ## Usage
 
