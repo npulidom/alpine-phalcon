@@ -6,8 +6,3 @@ OPTS="${2:-}"
 # build
 docker build $OPTS -t npulidom/alpine-phalcon:$TAG .
 echo "\n-> Build success\n"
-
-# image push
-if [ "$#" -ne 0 ] && [ "$1" = "push" ]; then
-	docker push npulidom/alpine-phalcon:$TAG
-fi
