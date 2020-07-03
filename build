@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TAG="${1:-latest}"
+TAG="3.4.x"
 OPTS="${2:-}"
 
 # build
