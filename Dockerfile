@@ -44,6 +44,7 @@ RUN apk update && apk add --no-cache \
 	make \
 	php7-dev \
 	php7-pear \
+	openssl-dev \
 	# pecl extensions
 	&& pecl install -o -f redis mongodb \
 	&& echo "extension=redis.so" > /etc/php7/conf.d/redis.ini \
@@ -54,6 +55,7 @@ RUN apk update && apk add --no-cache \
 		make \
 		php7-dev \
 		php7-pear \
+		openssl-dev \
 	# clean cache
 	&& rm -rf /var/cache/apk/*
 
