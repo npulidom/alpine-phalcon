@@ -1,13 +1,17 @@
 alpine-phalcon
 ==============
 
-PhalconPHP 4.x running in PHP-FPM (**nginx**), developed for Phalcon apps.
+PhalconPHP 4.x running in PHP-FPM (**nginx**), developed for PhalconPHP apps.
 Uncompressed size: ~117 MB.
 
 ## Usage
 
-Run Container [port **8080**]
+Run Container [local exposed port **8080**].
+
+
 ```sh
+# nginx runs as www-data user
+
 docker run -p 8080:80 -d npulidom/alpine-phalcon
 ```
 
@@ -16,7 +20,7 @@ Entry point options
 --nginx-env : export env vars to nginx, var must have at least one underscore, ie: *APP_ENV*, *APP_TZ*.
 ```
 
-Build Arguments
+Build Arguments (see build file)
 ```yaml
 timezone="America/Santiago"
 ```
@@ -27,7 +31,7 @@ timezone="America/Santiago"
 # latest tag
 FROM npulidom/alpine-phalcon
 
-# working dir
+# working directory
 WORKDIR /var/www
 
 # extra ops ...
@@ -36,9 +40,33 @@ WORKDIR /var/www
 CMD ["--nginx-env"]
 ```
 
-## PHP Extensions
+## Packages & PHP Extensions
 
+- bash
+- supervisord
+- nano
+- curl
+- gettext
+- composer
+- php
+- php-curl
+- php-dom
+- php-fileinfo
+- php-fpm
+- php-gettext
 - php-gd
-- php-redis
+- php-json
+- php-mbstring
+- php-mongodb
+- php-pdo
 - php-phalcon
+- php-phar
 - php-psr
+- php-opcache
+- php-openssl
+- php-redis
+- php-session
+- php-simplexml
+- php-tokenizer
+- php-xml
+- php-zlib

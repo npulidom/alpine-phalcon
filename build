@@ -2,7 +2,8 @@
 
 TAG="${1:-latest}"
 OPTS="${2:-}"
+TIMEZONE="America/Santiago"
 
-# build
-docker build $OPTS -t npulidom/alpine-phalcon:$TAG .
+# build [--no-cache]
+docker build $OPTS --build-arg timezone=$TIMEZONE -t npulidom/alpine-phalcon:$TAG .
 echo "\n-> Build success\n"
